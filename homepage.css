@@ -1,111 +1,248 @@
-/*jumbotron*/
+html: {
+    overflow-x: hidden;
+}
+
+h1,h2,h3,h4 {
+    margin: 0px;
+}
+
+
+
+/* code for animated blinking cursor */
+#typed{
+	color:black;
+	font-size: 40px;
+}
+
+.wrap{
+	padding-top:20%
+}
+
+.wrap img{
+	width: 200px;
+	height:200px;
+	 border-radius: 100%;
+
+    background-size: 2px;
+    border: 5px solid #FF0FB4;
+}
+.typed-cursor {
+    opacity: 1;
+    font-weight: 100;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    -ms-animation: blink 0.7s infinite;
+    -o-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+@-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 .header{
-	height:600px;
-/*	background:url("http://www.jeffbullas.com/wp-content/uploads/2012/06/10-Cool-Google+-Brand-Covers.jpg");
-*/
-/*	background:url("https://images.unsplash.com/photo-1430760814266-9c81759e5e55?q=80&fm=jpg&s=3276a313ddc63ffca3ce9c6c78c53b62");
-*/	background:url("./a morning city.jpeg"); 
-	border-position: center center;
 
-/*background:url("https://images.unsplash.com/photo-1430916273432-273c2db881a0?q=80&fm=jpg&s=2bbd42c0dcab6de89b56fa7b9da68ea8");
-*/	text-align: center;
-	background-size:cover;
-	color: white;
-	/*margin-bottom: 0px;*/
+        position: fixed;
+background-color: rgba(255,255,255,1);
+width: 100%;
+}
+#navBar {
+    list-style-type: none;
+    margin-top: 10px;
 }
 
-.mainbtn{
-
-	background-color: pink;
-	list-style: none;
-	font-size:30px;
-	padding: 0px 40px 0px 40px;
-	display:inline;
-	color:black;
+#navBar span{
+color: #FF0FB4
+}
+#navBar li {
+    list-style-type: none;
+    display: inline;
+    font-size: 30px;
+    font-style: italic;
+    padding-right: 10px;
 }
 
-h1{
-
-	text-align: center;
-	color: white;
-	margin-bottom: 100px;
-	background-color: rgba(54, 25, 25, .2);
-	background-size: 300px;
-	font-family: cursive;
-	font-size: 60px;
-	padding-top: 15px;
-	padding-bottom: 15px
+.yellowBackground {
+    background-size: cover;
+    background-color: #FEFF49;
 }
 
-/*
-#Jun{
-	align: left;
-	width: 78px;
-	float: left;
-*/
-
-.skills{
-
-	background-color: #FFEBF5;
-
-}
-h2{
-	text-align: center;
-	color: white;
-	background-color: grey;
-	height:70px;
-	padding-top: 20px;
-	margin-top: -20px;
-
-
+#homePage {
+    height: 100vh;/*
+    	background:url("./a morning city.jpeg"); 
+    background-size:cover; */
+    text-align: center;
+    color: white;
 }
 
-.skills li{
-	margin-top: 0px;
-	list-style: none;
-
-	font-size:30px;
-	padding: 0px 50px 0px 50px;
-	display:inline;
-	clear:top;
-	color:grey;
-
+#homePage p {
+    font-size: 40px;
+    color: black;
 }
-.projects{
 
-	color:white;
-	padding-bottom:40px;
-	background-image:url('./night mountains.jpeg');
+#homePage li {
+    list-style: none;
+    font-size: 30px;
+    padding: 0px 40px 0px 40px;
+    display: inline;
+    color: black;
+}
+
+#homePage h1 {
+    text-align: center;
+    color: #FFFFFF;
+    background-size: 300px;
+    font-family: cursive;
+    color: black;
+}
+
+#picAndName {
+    padding-top: 20%;
+}
+
+#Jun {
+    border-radius: 40%;
+    width: 80px;
+    height: 80px;
+    background-size: 2px;
+    border: 2px solid #FF0FB4;
+}
+
+
+.bounce {
+  position:fixed;
+  left:50%;
+  bottom:0;
+  margin-top:-20px;
+  margin-left:-25px;
+  height:30px;
+  width:30px;
+  background:url(https://www.emojibase.com/resources/img/emojis/hangouts/1f447.png);
+  background-size: cover;
+  -webkit-animation:bounce 1s infinite;
+}
+
+@-webkit-keyframes bounce {
+  0%       { bottom:5px; }
+  25%, 75% { bottom:15px; }
+  50%      { bottom:20px; }
+  100%     {bottom:0;}
+}
+
+.skills {
+    background-color: #FFEBF5;
+    margin-top: 0px;
+}
+
+h2 {
+    text-align: center;
+    color: black;
+    margin-top: 0px;
+}
+
+.skills li {
+    margin-top: 0px;
+    list-style: none;
+    font-size: 30px;
+    padding: 0px 50px 0px 50px;
+    display: inline;
+    clear: top;
+    color: black;
+}
+
+.projects {
+    padding-bottom: 40px;
+    background-image: url('./night mountains.jpeg');
     background-size: 100% 100%;
-
 }
 
-.projects section{
-	  text-align: center;
-
+.projects h2 {
+    color: white;
 }
 
-#github{
-	text-align: center;
-  	text-decoration: none;
-  	color:black;
+.projects p {
+    width: 200px;
+    margin-left: 150px;
+    margin-top: 30px;
 }
 
-img{
-	width:150px;
-	margin: 0 auto;
-	display: block
+#github {
+    text-align: center;
+    text-decoration: none;
+    color: black;
 }
 
-.individualProject{
-	text-align: center;
+img {
+    width: 200px;
+    height: 130px;
 }
 
-footer{
-	text-align: right;
-	color: white;
-	background-color: grey;
-	height:60px;
+.individualProject {
+    text-align: center;
 }
 
+
+
+
+footer {
+    text-align: right;
+    color: white;
+    background-color: grey;
+    height: 60px;
+}

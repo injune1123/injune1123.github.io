@@ -1,190 +1,89 @@
 <!DOCTYPE html>
-	<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Jun's website</title>
-		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	
-		<link type="text/css" href = "homepage.css" rel= "stylesheet">
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <title>Jun's website</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link type="text/css" href="homepage.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="./app.js"></script>
+    <script src="./typed.js"></script>
+</head>
 
-	</head>
-	<body>
-		<div class="header">
-		<!-- 
+<body>
+    <div class="header container-fluid">
+        <ul id="navBar">
+            <li><span>Jun Yin's</span></li>
+            <li>Projects</li>
+            <li>Skills</li>
+            <li>Hobbies</li>
+            <li>Resume</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div id="homePage" class="yellowBackground">
+        <!-- 
 		<video autoplay loop preload="none" id="roomhunter-video" class="hidden-xs"> <source id="video-source" src="https://d1mnrj0eye9ccu.cloudfront.net/video/1.mp4" type="video/mp4"> </video>  -->
-			<div id = "picAndName">
-		<!-- <img src="jun.png"/ id = "Jun">-->				
-			<h1 >Welcome to my website!</h1>
-			</div>
+        <div class="wrap">
+            <img src="jun.png">
+            <div class="type-wrap">
+                <div id="typed-strings">
+                    <p>My name is <i>Jun Yin</i>.</p>
+                    <p>I am a <strong>web developer</strong>.</p>
+                    <p>Language lover</p>
+                    <p> and food adventurer</p>
+                    <p>Welcome to my website!</p>
+                </div>
+                <span id="typed" style="white-space:pre;"></span>
+            </div>
+        </div>
 
-			<div>
-				<ul>
-					<li class = 'mainbtn'>Skills</li>
-					<li class = 'mainbtn'>Projects</li>
-				</ul>
-			</div>
-		</div>
+<div class="bounce hidden"></div>
 
-		
-		<div class="projects">
-			<h2>Projects</h2>
-			<div id="github">
-				<a href = "#">Link to github</a>
-			</div>
-			<div class="container">
-			<div class="row">
-				<section class= "col-sm-6 col-md-4 col-lg-12">
-				    <div class="row">
-          			<div class="col-lg-1 col-lg-offset-3">
-						<img src="http://aaronmaruska.com/wp-content/uploads/2014/10/project-puzzle.jpg"/>
-					</div>
-          			<div class="col-lg-5">
-						<h3>Project 1</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem officiis earum nesciunt voluptatum quam exercitationem, expedita necessitatibus eaque et modi. Molestias vel fugit libero cupiditate velit eveniet nisi minima consequatur.</p>
-					</div>
-				</section>
-				
-				<section class= "col-sm-6 col-md-4 col-lg-12">
-				    <div class="row">
-          			<div class="col-lg-1 col-lg-offset-3">
-						<img src="http://aaronmaruska.com/wp-content/uploads/2014/10/project-puzzle.jpg"/>
-					</div>
-          			<div class="col-lg-5">
-						<h3>Project 1</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem officiis earum nesciunt voluptatum quam exercitationem, expedita necessitatibus eaque et modi. Molestias vel fugit libero cupiditate velit eveniet nisi minima consequatur.</p>
-					</div>
-				</section>
 
-				<section class= "col-sm-6 col-md-4 col-lg-12">
-				    <div class="row">
-          			<div class="col-lg-1 col-lg-offset-3">
-						<img src="http://aaronmaruska.com/wp-content/uploads/2014/10/project-puzzle.jpg"/>
-					</div>
-          			<div class="col-lg-5">
-						<h3>Project 1</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem officiis earum nesciunt voluptatum quam exercitationem, expedita necessitatibus eaque et modi. Molestias vel fugit libero cupiditate velit eveniet nisi minima consequatur.</p>
-					</div>
-				</section>
 
-				<section class= "col-sm-6 col-md-4 col-lg-12">
-				    <div class="row">
-          			<div class="col-lg-1 col-lg-offset-3">
-						<img src="http://aaronmaruska.com/wp-content/uploads/2014/10/project-puzzle.jpg"/>
-					</div>
-          			<div class="col-lg-5">
-						<h3>Project 1</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem officiis earum nesciunt voluptatum quam exercitationem, expedita necessitatibus eaque et modi. Molestias vel fugit libero cupiditate velit eveniet nisi minima consequatur.</p>
-					</div>
-				</section>
-
-				<section class= "col-sm-6 col-md-4 col-lg-12">
-				    <div class="row">
-          			<div class="col-lg-1 col-lg-offset-3">
-						<img src="http://aaronmaruska.com/wp-content/uploads/2014/10/project-puzzle.jpg"/>
-					</div>
-          			<div class="col-lg-5">
-						<h3>Project 1</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem officiis earum nesciunt voluptatum quam exercitationem, expedita necessitatibus eaque et modi. Molestias vel fugit libero cupiditate velit eveniet nisi minima consequatur.</p>
-					</div>
-				</section>
-
-				<section class= "col-sm-6 col-md-4 col-lg-12">
-				    <div class="row">
-	          			<div class="col-lg-1 col-lg-offset-3">
-							<img src="http://aaronmaruska.com/wp-content/uploads/2014/10/project-puzzle.jpg"/>
-						</div>
-	          			<div class="col-lg-5">
-							<h3>Project 1</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem officiis earum nesciunt voluptatum quam exercitationem, expedita necessitatibus eaque et modi. Molestias vel fugit libero cupiditate velit eveniet nisi minima consequatur.</p>
-						</div>
-					</section>
-
-					<section class= "col-sm-6 col-md-4 col-lg-12">
-					    <div class="row">
-	          			<div class="col-lg-1 col-lg-offset-3">
-							<img src="http://aaronmaruska.com/wp-content/uploads/2014/10/project-puzzle.jpg"/>
-						</div>
-	          			<div class="col-lg-5">
-							<h3>Project 1</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem officiis earum nesciunt voluptatum quam exercitationem, expedita necessitatibus eaque et modi. Molestias vel fugit libero cupiditate velit eveniet nisi minima consequatur.</p>
-						</div>
-					</section>
-
-					<section class= "col-sm-6 col-md-4 col-lg-12">
-					    <div class="row">
-	          			<div class="col-lg-1 col-lg-offset-3">
-							<img src="http://aaronmaruska.com/wp-content/uploads/2014/10/project-puzzle.jpg"/>
-						</div>
-	          			<div class="col-lg-5">
-							<h3>Project 1</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem officiis earum nesciunt voluptatum quam exercitationem, expedita necessitatibus eaque et modi. Molestias vel fugit libero cupiditate velit eveniet nisi minima consequatur.</p>
-						</div>
-					</section>
-
-					<section class= "col-sm-6 col-md-4 col-lg-12">
-					    <div class="row">
-	          			<div class="col-lg-1 col-lg-offset-3">
-							<img src="http://aaronmaruska.com/wp-content/uploads/2014/10/project-puzzle.jpg"/>
-						</div>
-	          			<div class="col-lg-5">
-							<h3>Project 1</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem officiis earum nesciunt voluptatum quam exercitationem, expedita necessitatibus eaque et modi. Molestias vel fugit libero cupiditate velit eveniet nisi minima consequatur.</p>
-						</div>
-					</section>
-
-					<section class= "col-sm-6 col-md-4 col-lg-12">
-					    <div class="row">
-	          			<div class="col-lg-1 col-lg-offset-3">
-							<img src="http://aaronmaruska.com/wp-content/uploads/2014/10/project-puzzle.jpg"/>
-						</div>
-	          			<div class="col-lg-5">
-							<h3>Project 1</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem officiis earum nesciunt voluptatum quam exercitationem, expedita necessitatibus eaque et modi. Molestias vel fugit libero cupiditate velit eveniet nisi minima consequatur.</p>
-						</div>
-					</section>
-
-					<section class= "col-sm-6 col-md-4 col-lg-12">
-					    <div class="row">
-	          			<div class="col-lg-1 col-lg-offset-3">
-							<img src="http://aaronmaruska.com/wp-content/uploads/2014/10/project-puzzle.jpg"/>
-						</div>
-	          			<div class="col-lg-5">
-							<h3>Project 1</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem officiis earum nesciunt voluptatum quam exercitationem, expedita necessitatibus eaque et modi. Molestias vel fugit libero cupiditate velit eveniet nisi minima consequatur.</p>
-						</div>
-					</section>
-
-					<section class= "col-sm-6 col-md-4 col-lg-12">
-					    <div class="row">
-	          			<div class="col-lg-1 col-lg-offset-3">
-							<img src="http://aaronmaruska.com/wp-content/uploads/2014/10/project-puzzle.jpg"/>
-						</div>
-	          			<div class="col-lg-5">
-							<h3>Project 1</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem officiis earum nesciunt voluptatum quam exercitationem, expedita necessitatibus eaque et modi. Molestias vel fugit libero cupiditate velit eveniet nisi minima consequatur.</p>
-						</div>
-					</section>
-
-					<section class= "col-sm-6 col-md-4 col-lg-12">
-					    <div class="row">
-	          			<div class="col-lg-1 col-lg-offset-3">
-							<img src="http://aaronmaruska.com/wp-content/uploads/2014/10/project-puzzle.jpg"/>
-						</div>
-	          			<div class="col-lg-5">
-							<h3>Project 1</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem officiis earum nesciunt voluptatum quam exercitationem, expedita necessitatibus eaque et modi. Molestias vel fugit libero cupiditate velit eveniet nisi minima consequatur.</p>
-						</div>
-					</section>
-
-				</div>
-			</div>
-		</div>
-		<footer>
-			<p>created by: Jun</p>
-			<p>Contact information: <a href="mailto:injune1123@gmail.com">
+    </div>
+    <div class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>html</li>
+            <li>css</li>
+            <li>javascript</li>
+            <li>node.js</li>
+            <li>jQuery</li>
+            <li>python</li>
+        </ul>
+    </div>
+    <div class="projects row">
+        <h2>Projects</h2>
+        <div id="github">
+            <a href="#">Link to github</a>
+        </div>
+        <div class="col-md-4 individualProject">
+            <h3>Project 1</h3>
+            <img src="http://aaronmaruska.com/wp-content/uploads/2014/10/project-puzzle.jpg" />
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem officiis earum nesciunt voluptatum quam exercitationem, expedita necessitatibus eaque et modi. Molestias vel fugit libero cupiditate velit eveniet nisi minima consequatur.</p>
+            <img src="http://www.matteboken.se/Oldsite/media/34509307/tolka_diagram_01.png" />
+        </div>
+        <div class="col-md-4 individualProject">
+            <h3>Project 2</h3>
+            <img src="http://aaronmaruska.com/wp-content/uploads/2014/10/project-puzzle.jpg" />
+            <p>It's a wikipage like project Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non atque quo praesentium cumque, quisquam nisi, officia, alias amet incidunt quas nulla. Voluptatum unde dolores dolor, minima eveniet minus delectus, incidunt?</p>
+            <img src="http://www.matteboken.se/Oldsite/media/34509307/tolka_diagram_01.png" />
+        </div>
+        <div class="col-md-4 individualProject">
+            <h3>Project 3</h3>
+            <img src="http://aaronmaruska.com/wp-content/uploads/2014/10/project-puzzle.jpg" />
+            <p>It's a wikipage like project Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates ratione neque veniam at nesciunt, atque! Nulla deleniti sit eveniet iure temporibus dignissimos eum, inventore possimus, rerum atque, ratione ducimus architecto!</p>
+            <img src="http://www.matteboken.se/Oldsite/media/34509307/tolka_diagram_01.png" />
+        </div>
+    </div>
+    <footer>
+        <p>created by: Jun</p>
+        <p>Contact information: <a href="mailto:injune1123@gmail.com">
 			injune1123@gmail.com</a>.</p>
-		</footer>
+    </footer>
+</body>
 
-	</body>
-	</html>	
+</html>
