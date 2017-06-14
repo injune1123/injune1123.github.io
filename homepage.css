@@ -405,7 +405,15 @@ header.smaller nav a {
 }
 
 
+::-moz-selection { /* Code for Firefox */
+    color: #fff;
+    background: #0683c9;
+}
 
+::selection {
+    color: #fff;
+    background: #0683c9;
+}
 
 
 html: {
