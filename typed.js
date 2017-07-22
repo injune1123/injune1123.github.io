@@ -447,7 +447,7 @@
             loopCount: false,
             callback: function(){ foo(); },
             resetCallback: function() { newTyped(); }
-        });
+   });
 
         $(".reset").click(function(){
             $("#typed").typed('reset');
